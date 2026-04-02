@@ -5,10 +5,13 @@
 **ゼロからAIコーディングアシスタントを構築しよう**
 
 [![GitHub Stars](https://img.shields.io/github/stars/v2ish1yan/create-own-claude-code?style=social)](https://github.com/v2ish1yan/create-own-claude-code/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/v2ish1yan/create-own-claude-code?style=social)](https://github.com/v2ish1yan/create-own-claude-code/network/members)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/v2ish1yan/create-own-claude-code/pulls)
+
+> **8 Modules** | **52 Files** | **11,756 Lines of Code** | **3 Languages Supported**
 
 [中文](README.md) | [English](README_EN.md) | [日本語](README_JA.md)
 
