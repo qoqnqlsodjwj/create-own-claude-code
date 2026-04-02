@@ -142,14 +142,14 @@ Model Context Protocol integration, dynamic tool discovery & registration
 
 | Module | Topic | Difficulty | Key Technologies |
 |:------:|-------|:----------:|------------------|
-| 01 | [LLM API Communication](./modules/01-llm-api/) | ⭐⭐ | SSE Streaming, Tool Calling, Chat Completion |
+| 01 | [LLM Communication Basics](./modules/01-llm-basics/) | ⭐⭐ | SSE Streaming, Tool Calling, Chat Completion |
 | 02 | [Tool System Design](./modules/02-tool-system/) | ⭐⭐⭐ | Tool Interface, Registry, JSON Schema, Permissions |
 | 03 | [REPL Interactive Loop](./modules/03-repl-loop/) | ⭐⭐⭐ | REPL Loop, QueryEngine, Conversation History |
 | 04 | [Terminal UI (Ink)](./modules/04-terminal-ui/) | ⭐⭐⭐⭐ | Ink, React for Terminal, Yoga Layout |
 | 05 | [Context Management](./modules/05-context-management/) | ⭐⭐⭐⭐ | Token Budget, Compaction, Memory System |
 | 06 | [Agent & Multi-Agent System](./modules/06-agent-system/) | ⭐⭐⭐⭐⭐ | Sub-agent, Swarm Pattern, Task Orchestration |
-| 07 | [MCP Protocol Integration](./modules/07-mcp-protocol/) | ⭐⭐⭐⭐ | MCP Client/Server, Dynamic Tool Discovery |
-| 08 | [Full Project Integration](./modules/08-integration/) | ⭐⭐⭐⭐⭐ | System Integration, E2E Testing, Optimization |
+| 07 | [MCP Protocol Integration](./modules/07-mcp-integration/) | ⭐⭐⭐⭐ | MCP Client/Server, Dynamic Tool Discovery |
+| 08 | [Full Project Integration](./modules/08-full-project/) | ⭐⭐⭐⭐⭐ | System Integration, E2E Testing, Optimization |
 
 > 📅 See [docs/roadmap.md](./docs/roadmap.md) for the detailed 8-week study plan — recommended 1-2 hours per day
 
@@ -171,8 +171,8 @@ cp .env.example .env
 # ANTHROPIC_API_KEY=sk-ant-xxxxx
 
 # 4. Start from Module 1
-cd modules/01-llm-api
-npx tsx src/step1-hello-api.ts
+cd modules/01-llm-basics
+npx tsx src/step1-simple-call.ts
 ```
 
 <details>
@@ -203,7 +203,7 @@ create-own-claude-code/
 ├── docs/
 │   └── roadmap.md               # Detailed learning roadmap (8-week plan)
 ├── modules/
-│   ├── 01-llm-api/              # Module 1: LLM API Communication
+│   ├── 01-llm-basics/           # Module 1: LLM Communication Basics
 │   │   ├── README.md            #   Module guide & learning instructions
 │   │   ├── exercises.md         #   Exercises
 │   │   └── src/                 #   Runnable example code
@@ -212,8 +212,8 @@ create-own-claude-code/
 │   ├── 04-terminal-ui/          # Module 4: Terminal UI (Ink)
 │   ├── 05-context-management/   # Module 5: Context Management
 │   ├── 06-agent-system/         # Module 6: Agent System
-│   ├── 07-mcp-protocol/         # Module 7: MCP Protocol Integration
-│   └── 08-integration/          # Module 8: Full Project Integration
+│   ├── 07-mcp-integration/      # Module 7: MCP Protocol Integration
+│   └── 08-full-project/         # Module 8: Full Project Integration
 ├── .env.example                 # Environment variable template
 ├── package.json
 └── LICENSE                      # MIT License

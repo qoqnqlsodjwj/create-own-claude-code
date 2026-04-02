@@ -142,14 +142,14 @@ Model Context Protocol 协议集成，动态发现与注册外部工具
 
 | 模块 | 主题 | 难度 | 关键技术 |
 |:----:|------|:----:|----------|
-| 01 | [LLM API 通信基础](./modules/01-llm-api/) | ⭐⭐ | SSE Streaming, Tool Calling, Chat Completion |
+| 01 | [LLM 通信基础](./modules/01-llm-basics/) | ⭐⭐ | SSE Streaming, Tool Calling, Chat Completion |
 | 02 | [工具系统设计](./modules/02-tool-system/) | ⭐⭐⭐ | Tool Interface, Registry, JSON Schema, Permissions |
 | 03 | [REPL 交互循环](./modules/03-repl-loop/) | ⭐⭐⭐ | REPL Loop, QueryEngine, Conversation History |
 | 04 | [终端 UI (Ink)](./modules/04-terminal-ui/) | ⭐⭐⭐⭐ | Ink, React for Terminal, Yoga Layout |
 | 05 | [上下文管理与压缩](./modules/05-context-management/) | ⭐⭐⭐⭐ | Token Budget, Compaction, Memory System |
 | 06 | [Agent 与多智能体系统](./modules/06-agent-system/) | ⭐⭐⭐⭐⭐ | Sub-agent, Swarm Pattern, Task Orchestration |
-| 07 | [MCP 协议集成](./modules/07-mcp-protocol/) | ⭐⭐⭐⭐ | MCP Client/Server, Dynamic Tool Discovery |
-| 08 | [完整项目集成](./modules/08-integration/) | ⭐⭐⭐⭐⭐ | System Integration, E2E Testing, Optimization |
+| 07 | [MCP 协议集成](./modules/07-mcp-integration/) | ⭐⭐⭐⭐ | MCP Client/Server, Dynamic Tool Discovery |
+| 08 | [完整项目集成](./modules/08-full-project/) | ⭐⭐⭐⭐⭐ | System Integration, E2E Testing, Optimization |
 
 > 📅 详细学习计划见 [docs/roadmap.md](./docs/roadmap.md) — 建议每天 1-2 小时，8 周完成
 
@@ -171,8 +171,8 @@ cp .env.example .env
 # ANTHROPIC_API_KEY=sk-ant-xxxxx
 
 # 4. 从 Module 1 开始学习
-cd modules/01-llm-api
-npx tsx src/step1-hello-api.ts
+cd modules/01-llm-basics
+npx tsx src/step1-simple-call.ts
 ```
 
 <details>
@@ -203,7 +203,7 @@ create-own-claude-code/
 ├── docs/
 │   └── roadmap.md               # 详细学习路线图 (8 周计划)
 ├── modules/
-│   ├── 01-llm-api/              # Module 1: LLM API 通信基础
+│   ├── 01-llm-basics/           # Module 1: LLM 通信基础
 │   │   ├── README.md            #   模块说明与学习指南
 │   │   ├── exercises.md         #   练习题
 │   │   └── src/                 #   可运行的示例代码
@@ -212,8 +212,8 @@ create-own-claude-code/
 │   ├── 04-terminal-ui/          # Module 4: 终端 UI (Ink)
 │   ├── 05-context-management/   # Module 5: 上下文管理
 │   ├── 06-agent-system/         # Module 6: Agent 系统
-│   ├── 07-mcp-protocol/         # Module 7: MCP 协议集成
-│   └── 08-integration/          # Module 8: 完整项目集成
+│   ├── 07-mcp-integration/      # Module 7: MCP 协议集成
+│   └── 08-full-project/         # Module 8: 完整项目集成
 ├── .env.example                 # 环境变量模板
 ├── package.json
 └── LICENSE                      # MIT License

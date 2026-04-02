@@ -142,14 +142,14 @@ Model Context Protocol統合、動的ツール発見＆登録
 
 | モジュール | テーマ | 難易度 | 主要技術 |
 |:---------:|--------|:------:|----------|
-| 01 | [LLM API通信基礎](./modules/01-llm-api/) | ⭐⭐ | SSE Streaming, Tool Calling, Chat Completion |
+| 01 | [LLM通信基礎](./modules/01-llm-basics/) | ⭐⭐ | SSE Streaming, Tool Calling, Chat Completion |
 | 02 | [ツールシステム設計](./modules/02-tool-system/) | ⭐⭐⭐ | Tool Interface, Registry, JSON Schema, Permissions |
 | 03 | [REPLインタラクティブループ](./modules/03-repl-loop/) | ⭐⭐⭐ | REPL Loop, QueryEngine, Conversation History |
 | 04 | [ターミナルUI (Ink)](./modules/04-terminal-ui/) | ⭐⭐⭐⭐ | Ink, React for Terminal, Yoga Layout |
 | 05 | [コンテキスト管理](./modules/05-context-management/) | ⭐⭐⭐⭐ | Token Budget, Compaction, Memory System |
 | 06 | [Agent & マルチAgentシステム](./modules/06-agent-system/) | ⭐⭐⭐⭐⭐ | Sub-agent, Swarm Pattern, Task Orchestration |
-| 07 | [MCPプロトコル統合](./modules/07-mcp-protocol/) | ⭐⭐⭐⭐ | MCP Client/Server, Dynamic Tool Discovery |
-| 08 | [完全プロジェクト統合](./modules/08-integration/) | ⭐⭐⭐⭐⭐ | System Integration, E2E Testing, Optimization |
+| 07 | [MCPプロトコル統合](./modules/07-mcp-integration/) | ⭐⭐⭐⭐ | MCP Client/Server, Dynamic Tool Discovery |
+| 08 | [完全プロジェクト統合](./modules/08-full-project/) | ⭐⭐⭐⭐⭐ | System Integration, E2E Testing, Optimization |
 
 > 📅 詳細な8週間学習計画は [docs/roadmap.md](./docs/roadmap.md) を参照 — 1日1〜2時間を推奨
 
@@ -171,8 +171,8 @@ cp .env.example .env
 # ANTHROPIC_API_KEY=sk-ant-xxxxx
 
 # 4. Module 1から学習開始
-cd modules/01-llm-api
-npx tsx src/step1-hello-api.ts
+cd modules/01-llm-basics
+npx tsx src/step1-simple-call.ts
 ```
 
 <details>
@@ -203,7 +203,7 @@ create-own-claude-code/
 ├── docs/
 │   └── roadmap.md               # 詳細な学習ロードマップ（8週間計画）
 ├── modules/
-│   ├── 01-llm-api/              # Module 1: LLM API通信基礎
+│   ├── 01-llm-basics/           # Module 1: LLM通信基礎
 │   │   ├── README.md            #   モジュールガイド
 │   │   ├── exercises.md         #   練習問題
 │   │   └── src/                 #   実行可能なサンプルコード
@@ -212,8 +212,8 @@ create-own-claude-code/
 │   ├── 04-terminal-ui/          # Module 4: ターミナルUI (Ink)
 │   ├── 05-context-management/   # Module 5: コンテキスト管理
 │   ├── 06-agent-system/         # Module 6: Agentシステム
-│   ├── 07-mcp-protocol/         # Module 7: MCPプロトコル統合
-│   └── 08-integration/          # Module 8: 完全プロジェクト統合
+│   ├── 07-mcp-integration/      # Module 7: MCPプロトコル統合
+│   └── 08-full-project/         # Module 8: 完全プロジェクト統合
 ├── .env.example                 # 環境変数テンプレート
 ├── package.json
 └── LICENSE                      # MIT License
